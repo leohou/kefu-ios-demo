@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -68,8 +68,9 @@
 		90AA02B023D2A6F700BDD85D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB62E3BB1A8E0B8700705655 /* InfoPlist.strings */; };
 		90BE1E3D2216C656007D17A1 /* UIViewController+AlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BE1E3C2216C656007D17A1 /* UIViewController+AlertController.m */; };
 		90EE4C5523548CD200DEE8CA /* HRobotUnsolveItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EE4C5423548CD200DEE8CA /* HRobotUnsolveItemView.m */; };
-		93A00A4D27605C6C0050425C /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A00A4C27605C6C0050425C /* Hyphenate.framework */; };
-		93A00A4E27605C6C0050425C /* Hyphenate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93A00A4C27605C6C0050425C /* Hyphenate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		930E31FE27DF59A100455C7E /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930E31FD27DF59A100455C7E /* Hyphenate.framework */; };
+		930E31FF27DF59A100455C7E /* Hyphenate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 930E31FD27DF59A100455C7E /* Hyphenate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		930E320727DF5B3000455C7E /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930E320527DF5B2F00455C7E /* Hyphenate.framework */; platformFilter = ios; };
 		93A00A502760780B0050425C /* HelpDesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A00A4F2760780B0050425C /* HelpDesk.framework */; };
 		93A00A6B27607A860050425C /* HDMASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A00A5D27607A850050425C /* HDMASViewConstraint.m */; };
 		93A00A6C27607A860050425C /* HDMASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A00A5E27607A850050425C /* HDMASCompositeConstraint.m */; };
@@ -457,7 +458,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				93A00A4E27605C6C0050425C /* Hyphenate.framework in Embed Frameworks */,
+				930E31FF27DF59A100455C7E /* Hyphenate.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,7 +553,9 @@
 		90BE1E3C2216C656007D17A1 /* UIViewController+AlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertController.m"; sourceTree = "<group>"; };
 		90EE4C5323548CD200DEE8CA /* HRobotUnsolveItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRobotUnsolveItemView.h; sourceTree = "<group>"; };
 		90EE4C5423548CD200DEE8CA /* HRobotUnsolveItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRobotUnsolveItemView.m; sourceTree = "<group>"; };
-		93A00A4C27605C6C0050425C /* Hyphenate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hyphenate.framework; sourceTree = "<group>"; };
+		930E31FD27DF59A100455C7E /* Hyphenate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hyphenate.framework; path = "../kefu-sdk-ios/helpdesk_sdk/imsdk/Hyphenate.framework"; sourceTree = "<group>"; };
+		930E320427DF5B2F00455C7E /* HyphenateLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyphenateLite.framework; sourceTree = "<group>"; };
+		930E320527DF5B2F00455C7E /* Hyphenate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hyphenate.framework; sourceTree = "<group>"; };
 		93A00A4F2760780B0050425C /* HelpDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HelpDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A00A5227607A850050425C /* NSArray+HDMASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HDMASShorthandAdditions.h"; sourceTree = "<group>"; };
 		93A00A5327607A850050425C /* View+HDMASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+HDMASAdditions.h"; sourceTree = "<group>"; };
@@ -1148,8 +1151,8 @@
 				93E79305277C67BB0019FD80 /* Bugly.framework in Frameworks */,
 				D3E4B4471E7AA41B004FEA49 /* libiconv.tbd in Frameworks */,
 				D3AA4B261ED45B7300B5C509 /* hdlibopencore-amrwb.a in Frameworks */,
+				930E31FE27DF59A100455C7E /* Hyphenate.framework in Frameworks */,
 				EB62E4551A8E2DAB00705655 /* Foundation.framework in Frameworks */,
-				93A00A4D27605C6C0050425C /* Hyphenate.framework in Frameworks */,
 				EB62E4531A8E2DA400705655 /* UIKit.framework in Frameworks */,
 				EB62E44D1A8E2D9300705655 /* CFNetwork.framework in Frameworks */,
 				D3AA4B251ED45B7300B5C509 /* hdlibopencore-amrnb.a in Frameworks */,
@@ -1157,6 +1160,7 @@
 				EB62E4451A8E2D7900705655 /* MobileCoreServices.framework in Frameworks */,
 				EB62E4431A8E2D7300705655 /* SystemConfiguration.framework in Frameworks */,
 				EB62E43B1A8E2D5600705655 /* ImageIO.framework in Frameworks */,
+				930E320727DF5B3000455C7E /* Hyphenate.framework in Frameworks */,
 				EB62E4391A8E2D5000705655 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1271,6 +1275,24 @@
 				90EE4C5423548CD200DEE8CA /* HRobotUnsolveItemView.m */,
 			);
 			path = RobotUnsolveItemView;
+			sourceTree = "<group>";
+		};
+		930E320227DF5B2F00455C7E /* imsdk */ = {
+			isa = PBXGroup;
+			children = (
+				930E320327DF5B2F00455C7E /* Lite */,
+				930E320527DF5B2F00455C7E /* Hyphenate.framework */,
+			);
+			name = imsdk;
+			path = "../../kefu-sdk-ios/helpdesk_sdk/imsdk";
+			sourceTree = "<group>";
+		};
+		930E320327DF5B2F00455C7E /* Lite */ = {
+			isa = PBXGroup;
+			children = (
+				930E320427DF5B2F00455C7E /* HyphenateLite.framework */,
+			);
+			path = Lite;
 			sourceTree = "<group>";
 		};
 		93A00A5127607A850050425C /* HDMasonry */ = {
@@ -1643,9 +1665,9 @@
 		D35726071DE315640033D4E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				930E31FD27DF59A100455C7E /* Hyphenate.framework */,
 				93E79304277C67BB0019FD80 /* Bugly.framework */,
 				93A00A4F2760780B0050425C /* HelpDesk.framework */,
-				93A00A4C27605C6C0050425C /* Hyphenate.framework */,
 				D378E6051F5669A400E3AB74 /* Security.framework */,
 				D3E4B4371E7A930E004FEA49 /* AVFoundation.framework */,
 				D33946EB1E54371C009370BF /* libiconv.tbd */,
@@ -2484,6 +2506,7 @@
 		EB62E1FB1A8DD92D00705655 /* CustomerSystem-ios */ = {
 			isa = PBXGroup;
 			children = (
+				930E320227DF5B2F00455C7E /* imsdk */,
 				93E792F9277ADA290019FD80 /* CustomerSystem-iosRelease.entitlements */,
 				9094F1CA21E83C8C00037601 /* 3rdParty */,
 				9086150920B43A54002E71DA /* Call */,
@@ -3181,6 +3204,7 @@
 					"\"$(SRCROOT)/../../../sdk3.x/RTC/webrtc-src/out/ios\"",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/imsdk",
+					"\"$(SRCROOT)/../kefu-sdk-ios/helpdesk_sdk/imsdk\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/CustomerSystem-ios/CustomerSystem.pch";
@@ -3191,7 +3215,10 @@
 				);
 				INFOPLIST_FILE = "CustomerSystem-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomerSystem-ios",
@@ -3225,6 +3252,7 @@
 					"\"$(SRCROOT)/imsdk\"",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/imsdk",
+					"\"$(SRCROOT)/../kefu-sdk-ios/helpdesk_sdk/imsdk\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/CustomerSystem-ios/CustomerSystem.pch";
@@ -3235,7 +3263,10 @@
 				);
 				INFOPLIST_FILE = "CustomerSystem-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomerSystem-ios",

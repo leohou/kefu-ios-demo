@@ -486,6 +486,11 @@ typedef enum : NSUInteger {
     EMMessageBody *messageBody = message.body;
     if ([messageBody type] == EMMessageBodyTypeImage) {
         EMImageMessageBody *imageBody = (EMImageMessageBody *)messageBody;
+        
+//        NSData * data = [NSData dataWithContentsOfFile:imageBody.thumbnailLocalPath];
+//        
+//        UIImage * img = [UIImage imageWithData:data];
+        
         if (imageBody.thumbnailDownloadStatus > EMDownloadStatusSuccessed) {
             //download the message thumbnail
             [[HDClient sharedClient].chatManager downloadAttachment:message progress:nil completion:completion];
@@ -493,6 +498,11 @@ typedef enum : NSUInteger {
     }else if ([messageBody type] == EMMessageBodyTypeVideo) {
         /* 目前后台没有提供缩略图，暂时不自动下载视频缩略图*/
          EMVideoMessageBody *videoBody = (EMVideoMessageBody *)messageBody;
+      
+       
+//        NSData * data = [NSData dataWithContentsOfFile:videoBody.thumbnailLocalPath];
+//
+//        UIImage * img = [UIImage imageWithData:data];
          if (videoBody.thumbnailDownloadStatus > EMDownloadStatusSuccessed) {
          //download the message thumbnail
          [[HDClient sharedClient].chatManager hd_downloadThumbnail:message progress:nil completion:completion];

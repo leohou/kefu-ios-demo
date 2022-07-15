@@ -2452,11 +2452,12 @@ void NotificationVideoCallback(CFNotificationCenterRef center,
 #pragma mark --vec 1.3 满意度
 - (void)onEnquiryInviteParameter:(NSDictionary *)enquiryInvite withMessage:(HDMessage *)message{
     
-    [self.hdVideoAnswerView addSubview:self.hdSatisfactionView];
-    
-    [self.hdSatisfactionView setEnquiryInvite:enquiryInvite withModel:message];
-    
-    [self.hdVideoAnswerView bringSubviewToFront:self.hdSatisfactionView];
+    //屏蔽满意度 
+//    [self.hdVideoAnswerView addSubview:self.hdSatisfactionView];
+//
+//    [self.hdSatisfactionView setEnquiryInvite:enquiryInvite withModel:message];
+//
+//    [self.hdVideoAnswerView bringSubviewToFront:self.hdSatisfactionView];
 
 }
 - (void)hd_upateFrame:(CGFloat)height{

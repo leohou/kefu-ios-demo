@@ -177,7 +177,7 @@
             _hangUpLabel.text =NSLocalizedString(@"video.answer.hangup", @"挂断");
             self.closeBtn.hidden = YES;
             
-            [self startTimer];
+//            [self startTimer];
             
             break;
         case HDVideoProcessLineUp:

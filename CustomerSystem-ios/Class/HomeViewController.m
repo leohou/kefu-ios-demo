@@ -17,10 +17,12 @@
 #import "HDMessageViewController.h"
 #import "QRCodeViewController.h"
 #import "HConversationsViewController.h"
+#import "HDAgoraCallViewController.h"
 #import "HDCallViewController.h"
 #import "HDVideoCallViewController.h"
 #import "HDCloudDiskViewController.h"
 #import "HDAgoraCallManager.h"
+#import "HDVideoWindowViewController.h"
 #import "MBProgressHUD+Add.h"
 #define kafterSale @"shouhou"
 #define kpreSale @"shouqian"
@@ -756,7 +758,17 @@ static const CGFloat kDefaultPlaySoundInterval = 3.0;
     
     
 //   
+    
+    [HDVideoWindowViewController sharedManager];
 
+    
+  
+    
+  
+    
+   
+    
+    
     
     
 }

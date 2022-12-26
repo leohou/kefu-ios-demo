@@ -220,6 +220,7 @@
         NSDictionary *dic1 = @{@"createTicketEnable":@"true"};
         [message addMsgTypeDictionary:dic1];
         [self _sendMessage:message];
+//        [self.conversation addMessage:message error:nil];
         
     } else {
         HDVisitorTrack *vt = (HDVisitorTrack *)[self trackOrOrder];
